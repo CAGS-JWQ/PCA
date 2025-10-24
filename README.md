@@ -46,20 +46,34 @@ The mathematical foundation of PCA (Principal Component Analysis)
 协方差矩阵具有半正定性，即这个矩阵的特征值都大于或者等于0  
 协方差矩阵的计算步骤：1中心化，每个样本减去其平均值 2构造矩阵 去中心化的数据矩阵 3矩阵乘法 样本协方差矩阵s S=1/（n-1）*A**T*A  
 
+
+
+
+
+
+
 # 对PCA方法的工作流程 
-第一步：数据标准化：    
+## 第一步：数据标准化：    
 相当于给每个特征一个“公平”，让它们在计算上站在同一个起跑线上  
 <img width="854" height="387" alt="image" src="https://github.com/user-attachments/assets/af5f327b-85e9-4d56-a8b9-9872ffa32e5b" />
 
-第二步：计算协方差矩阵：    
+## 第二步：计算协方差矩阵：    
 <img width="829" height="398" alt="image" src="https://github.com/user-attachments/assets/8c0426cc-2c0c-4537-a7d8-5a5e923627b2" />
 
-第三步：计算协方差矩阵的特征值和特征向量：   
+## 第三步：计算协方差矩阵的特征值和特征向量：   
 <img width="846" height="413" alt="image" src="https://github.com/user-attachments/assets/3398ff41-bbfa-40f7-ba7e-dd540eb46cda" />
 
-第四步：对特征值排序并选择主成分：  
+## 第四步：对特征值排序并选择主成分：  
 <img width="818" height="406" alt="image" src="https://github.com/user-attachments/assets/92ff82b1-25db-4502-b167-e3cabf0b017b" />
 
-第五步：将数据投影到新的特征子空间：  
+## 第五步：将数据投影到新的特征子空间：  
 <img width="769" height="274" alt="image" src="https://github.com/user-attachments/assets/a5f66fea-1235-4b62-a57d-12dfd9499082" />
 
+## 对于矩阵的物理空间理解：  
+首先从简单的二维矩阵进行讨论  
+矩阵看成两个在二维空间中的方向指针，它们构成一个平面  
+三维矩阵中  
+由三个向量构成一个空间  
+依次类推 n维矩阵 则构成了一个n维空间  
+以上的情况，需要满足每个向量互不线性相关  
+假若其中的某个向量可以由其他向量表示，则表示的空间小于n维  
