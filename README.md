@@ -61,6 +61,8 @@ The mathematical foundation of PCA (Principal Component Analysis)
 <img width="829" height="398" alt="image" src="https://github.com/user-attachments/assets/8c0426cc-2c0c-4537-a7d8-5a5e923627b2" />
 
 ## 第三步：计算协方差矩阵的特征值和特征向量：   
+为什么协方差矩阵的特征值会和方差相关 这是因为求解的原因吗？  
+是的，这完全是由我们求解主成分的过程所定义和推导出来的。特征值本质上就是数据在对应特征向量（主成分）方向上的方差。  
 <img width="846" height="413" alt="image" src="https://github.com/user-attachments/assets/3398ff41-bbfa-40f7-ba7e-dd540eb46cda" />
 
 ## 第四步：对特征值排序并选择主成分：  
