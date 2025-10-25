@@ -80,3 +80,7 @@ The mathematical foundation of PCA (Principal Component Analysis)
 以上的情况，需要满足每个向量互不线性相关  
 假若其中的某个向量可以由其他向量表示，则表示的空间小于n维  
 需要随时清楚，PCA是在无监督学习下的，所以请不要把分类等监督任务交给他，单纯的进行降维就可以了。
+
+## 关于PCA降维和图像特征处理的一些问题  
+我将与DEEPSEEK的聊天记录进行展示  
+https://chat.deepseek.com/share/620oakl0y3yyydizvl
