@@ -84,3 +84,13 @@ The mathematical foundation of PCA (Principal Component Analysis)
 ## 关于PCA降维和图像特征处理的一些问题  
 我将与DEEPSEEK的聊天记录进行展示  
 https://chat.deepseek.com/share/620oakl0y3yyydizvl
+
+# NMF非负矩阵分解、流形学习算法  
+此次部分先简单的进行解答，后续有时间了，再细致的进行描述  
+## NMF  
+和PCA不同，PCA通过对全局的描绘，总结新的特征，利用这些特征和各自的系数（可正可负）来描述数据点  
+NMF更注重，每个局部的特征，利用非负的系数来描述数据点  
+
+## 流形学习算法  
+经常用于数据的展示（书上就是对原本拥有多特征的数据点，降维后的展示）  
+pca的展示不能很好的展示原本数据点之间的关系，流形学习算法通过t-SNE算法可以将这些数据点很好的展示，并显示不同数据点的内在结构关系。  
